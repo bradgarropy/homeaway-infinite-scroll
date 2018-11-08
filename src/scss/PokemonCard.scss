@@ -1,0 +1,16 @@
+@import "colors";
+
+.pokemon-card {
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    font-size: 1.25rem;
+    color: $grey;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid $gray;
+
+    p {
+        margin: 0;
+    }
+}
