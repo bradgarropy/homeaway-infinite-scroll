@@ -57,7 +57,7 @@ class PokemonList extends React.Component {
     onScroll() {
         const {innerHeight, scrollY} = window
         const {scrollHeight} = document.body
-        const scrolled = Math.ceil(innerHeight + scrollY) === scrollHeight
+        const scrolled = Math.ceil(innerHeight + scrollY) >= scrollHeight
         scrolled && this.getMore()
     }
 
