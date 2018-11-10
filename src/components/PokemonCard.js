@@ -4,12 +4,19 @@ import PropTypes from "prop-types"
 // styles
 import "../scss/PokemonCard.scss"
 
+// utils
+import {capitalize} from "../utils/utils"
+
 const PokemonCard = ({pokemon}) => {
     return (
-        <div className="pokemon-card">
+        <a
+            href={`https://www.pokemon.com/us/pokedex/${pokemon.name}`}
+            className="pokemon-card"
+        >
+            <p className="pokemon-card-number">#{pokemon.id}</p>
             <img src={pokemon.sprites.front_default} alt={pokemon.name} />
-            <p>{pokemon.name}</p>
-        </div>
+            <p>{capitalize(pokemon.name)}</p>
+        </a>
     )
 }
 
