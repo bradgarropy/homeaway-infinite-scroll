@@ -1,6 +1,6 @@
 {
-    "name": "crapp starter",
-    "short_name": "crapp starter",
+    "name": "HomeAway Infinite Scroll",
+    "short_name": "HomeAway Infinite Scroll",
     "start_url": "/",
     "display": "minimal-ui",
     "theme_color": "#ffffff",
